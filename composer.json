@@ -1,0 +1,14 @@
+{
+    "name": "akesh/hr_response",
+    "autoload": {
+        "psr-4": {
+            "Akesh\\HrResponse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aman"
+        }
+    ],
+    "require": {}
+}
