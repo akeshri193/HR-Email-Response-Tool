@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-session_start();
 if (!isset($_SESSION["HR_logged_in"]) || !$_SESSION["HR_logged_in"]){
     header("Location: index.php");
     exit();
@@ -49,4 +48,5 @@ if ($data) {
 catch (Exception $e) {
     print_r($e);
 }
+
 ?>
