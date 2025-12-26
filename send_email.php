@@ -24,14 +24,14 @@ if ($data) {
 
     try {
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp.domain.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'akeshri193@gmail.com';
+        $mail->Username   = 'your_email@domain.com';
         $mail->Password   = 'your_app_password_here';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
-        $mail->setFrom('akeshri193@gmail.com', 'HR Department');
+        $mail->setFrom('your_email@domain.com', 'HR Department');
         $mail->addAddress($data['email']);
 
         $mail->isHTML(false);
